@@ -55,10 +55,13 @@ All 3D models used in this project were crafted with Blender, ensuring precise a
 
 We welcome contributions from the community to enhance this project further! Here’s how you can get involved:
 	1.	Fork the Repository:
+ 
 Click on the Fork button in the top-right corner of this page.
-	2.	Clone the Fork:
+	
+ 2.	Clone the Fork:
 
 git clone https://github.com/your-username/IGDTUW-3D-Map.git
+
 cd IGDTUW-3D-Map
 
 
