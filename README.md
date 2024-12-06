@@ -3,9 +3,10 @@
 
 ## 📍 Campus Overview
 
-Here’s the **Master Plan of Indira Gandhi Delhi Technical University for Women** to give you a quick visual overview of the campus layout:
 
-![IGDTUW Campus Map](ig2.jpeg)
+Here is the visual representation of the IGDTUW Campus:
+
+<img src="ig2.jpg" alt="IGDTUW Campus Map" width="600">
 A fully interactive and immersive **3D campus map** for **Indira Gandhi Delhi Technical University for Women (IGDTUW)**, designed to offer a realistic and detailed virtual tour experience. Built using advanced 3D rendering technologies, this project aims to provide users with a comprehensive and engaging way to explore the IGDTUW campus virtually.
 
 ## Table of Contents
