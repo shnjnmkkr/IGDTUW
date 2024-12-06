@@ -101,6 +101,7 @@ Contribute to the project and be part of the acknowledgment section! 🌟
 📂 Project Structure
 
 IGDTUW-3D-Map/
+
 ├── models/             # 3D models in .glb format
 
 ├── assets/             # Images, icons, and static assets
