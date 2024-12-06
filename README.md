@@ -53,36 +53,39 @@ All 3D models used in this project were crafted with Blender, ensuring precise a
 
 🤝 Contributing
 
-We welcome contributions from the community to enhance this project further! Here’s how you can get involved:
+We welcome contributions from the community to enhance this project further!
+
+Here’s how you can get involved:
+
 	1.	Fork the Repository:
  
 Click on the Fork button in the top-right corner of this page.
 	
- 2.	Clone the Fork:
+    2.	Clone the Fork:
 
-git clone https://github.com/your-username/IGDTUW-3D-Map.git
+    git clone https://github.com/your-username/IGDTUW-3D-Map.git
 
-cd IGDTUW-3D-Map
+    cd IGDTUW-3D-Map
 
 
 	3.	Create a Feature Branch:
 
-git checkout -b feature/your-feature-name
+    git checkout -b feature/your-feature-name
 
 
 	4.	Make Changes and Commit:
 
-git add .
-git commit -m "Add your feature"
+    git add .
+    git commit -m "Add your feature"
 
 
 	5.	Push to GitHub:
 
-git push origin feature/your-feature-name
+     git push origin feature/your-feature-name
 
 
 	6.	Submit a Pull Request:
-Open a pull request describing your changes.
+    Open a pull request describing your changes.
 
 📜 Acknowledgments
 
