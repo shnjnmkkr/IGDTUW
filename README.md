@@ -1,7 +1,19 @@
 
 # IGDTUW 3D Campus Map 🌐
 
-A fully interactive and immersive **3D campus map** for **Indira Gandhi Delhi Technical University for Women (IGDTUW)**, designed to offer a realistic and detailed virtual tour experience. Built using modern web technologies like **Three.js**, **WebGL**, and **Blender**, this project combines high-quality visuals with seamless interactivity to create a professional-level platform for students, visitors, and faculty.
+A fully interactive and immersive **3D campus map** for **Indira Gandhi Delhi Technical University for Women (IGDTUW)**, designed to offer a realistic and detailed virtual tour experience. Built using advanced 3D rendering technologies, this project aims to provide users with a comprehensive and engaging way to explore the IGDTUW campus virtually.
+
+## Table of Contents
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Installation Guide](#-installation-guide)
+- [Usage Instructions](#-usage-instructions)
+- [3D Models and Assets](#-3d-models-and-assets)
+- [Contributing](#-contributing)
+- [Acknowledgments](#-acknowledgments)
+- [Project Structure](#-project-structure)
+- [License](#-license)
+- [Contact](#-contact)
 
 ---
 
@@ -33,103 +45,105 @@ A fully interactive and immersive **3D campus map** for **Indira Gandhi Delhi Te
    ```bash
    git clone https://github.com/your-username/IGDTUW-3D-Map.git
    cd IGDTUW-3D-Map
+   ```
 
-	2.	Install Dependencies (if applicable):
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-npm install
+3. **Run Locally**:
+   ```bash
+   npm start
+   ```
 
+4. **Open in Browser**:
+   Visit [http://localhost:3000](http://localhost:3000) to explore the 3D map.
 
-	3.	Run Locally:
+---
 
-npm start
-
-
-	4.	Open in Browser:
-Visit http://localhost:3000 to explore the 3D map.
-
-🎨 3D Models and Assets
+## 🎨 3D Models and Assets
 
 All 3D models used in this project were crafted with Blender, ensuring precise and high-quality campus structures. The .glb format was utilized for seamless integration with Three.js.
 
-🤝 Contributing
+---
 
-We welcome contributions from the community to enhance this project further!
+## 🤝 Contributing
 
-Here’s how you can get involved:
+We welcome contributions from the community to enhance this project further! Here’s how you can get involved:
 
-	1.	Fork the Repository:
- 
-Click on the Fork button in the top-right corner of this page.
-	
-    2.	Clone the Fork:
+1. **Fork the Repository**:
+   Click on the Fork button in the top-right corner of this page.
 
-    git clone https://github.com/your-username/IGDTUW-3D-Map.git
+2. **Clone the Fork**:
+   ```bash
+   git clone https://github.com/your-username/IGDTUW-3D-Map.git
+   cd IGDTUW-3D-Map
+   ```
 
-    cd IGDTUW-3D-Map
+3. **Create a Feature Branch**:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
+4. **Make Changes and Commit**:
+   ```bash
+   git add .
+   git commit -m "Add your feature"
+   ```
 
-	3.	Create a Feature Branch:
+5. **Push to GitHub**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
 
-    git checkout -b feature/your-feature-name
+6. **Submit a Pull Request**:
+   Open a pull request describing your changes.
 
+---
 
-	4.	Make Changes and Commit:
-
-    git add .
-    git commit -m "Add your feature"
-
-
-	5.	Push to GitHub:
-
-     git push origin feature/your-feature-name
-
-
-	6.	Submit a Pull Request:
-    Open a pull request describing your changes.
-
-📜 Acknowledgments
+## 📜 Acknowledgments
 
 This project has been a collaborative effort with contributions from several talented individuals. Special thanks to:
-	•	Deepak Gupta - Lead Developer & Project Creator
-	•	Contributor 1 - UI Refinements and Animation Enhancements
-	•	Contributor 2 - Navigation and Pathfinding Features
-	•	Contributor 3 - Search and Feedback Systems
+- Deepak Gupta - Lead Developer & Project Creator
+- Contributor 1 - UI Refinements and Animation Enhancements
+- Contributor 2 - Navigation and Pathfinding Features
+- Contributor 3 - Search and Feedback Systems
 
 And a huge shoutout to the open-source community for their support and tools like Three.js, GSAP, and Blender, which made this project possible!
 
-Want to See Your Name Here?
+Want to See Your Name Here? Contribute to the project and be part of the acknowledgment section! 🌟
 
-Contribute to the project and be part of the acknowledgment section! 🌟
+---
 
-📂 Project Structure
+## 📂 Project Structure
 
+```
 IGDTUW-3D-Map/
-
 ├── models/             # 3D models in .glb format
-
 ├── assets/             # Images, icons, and static assets
-
 ├── css/                # Styling files
-
 ├── js/                 # JavaScript for interactivity
-
 ├── index.html          # Main HTML file
-
 ├── README.md           # Project documentation
-
 ├── .gitignore          # Git ignored files
-
 └── package.json        # npm configuration
+```
 
-📄 License
+---
+
+## 📄 License
 
 This project is licensed under the MIT License. You’re free to use, modify, and distribute it. Refer to the LICENSE file for more details.
 
-📧 Contact
+---
+
+## 📧 Contact
 
 For queries or collaboration opportunities, feel free to reach out to:
-	•	Deepak Gupta
-GitHub: divi-24
-Email: divi2749@gmail.com
+- Deepak Gupta
+  - GitHub: [divi-24](https://github.com/divi-24)
+  - Email: divi2749@gmail.com
 
 Let’s build a community-driven project and make this the go-to platform for exploring IGDTUW virtually! 🚀✨
+``
