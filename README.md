@@ -109,16 +109,57 @@ We welcome contributions from the community to enhance this project further! Her
 ## 📜 Acknowledgments
 
 This project has been a collaborative effort with contributions from several talented individuals. Special thanks to:
-- Deepak Gupta - Lead Developer & Project Creator
-- Contributor 1 - UI Refinements and Animation Enhancements
-- Contributor 2 - Navigation and Pathfinding Features
-- Contributor 3 - Search and Feedback Systems
 
-And a huge shoutout to the open-source community for their support and tools like Three.js, GSAP, and Blender, which made this project possible!
-
-Want to See Your Name Here? Contribute to the project and be part of the acknowledgment section! 🌟
+### Deepak Gupta - [LEAD DEVELOPER & PROJECT ADMIN](https://github.com/divi-24)
+The visionary behind this project, responsible for overseeing the development, structuring, and implementation of core features.
 
 ---
+
+### Team Coding
+The Coding team has been instrumental in writing the main code for this project, ensuring a seamless user experience.
+
+- **CHHAVI** - [](https://github.com/chhavibhalla)
+- **SHANJAN(TEAM HEAD)** - [](https://github.com/shnjnmkkr) 
+- **TUSHAR** - [](https://github.com/tusharsinghbisht)
+- **HITANSHA** - [](https://github.com/Hits-p)
+- **PALAK** - [](https://github.com/PalakChadha27)
+- **AYATI** - [](https://github.com/Ayati-G)
+- **ANISHA** - [](https://github.com/AnishaGupta-tech)
+- **MUSKAN** - [](https://github.com/MuskanPhogat2024)
+
+---
+
+### Team Blender
+The Blender team worked on creating the 3D models that bring this campus map to life.
+
+- **PRIYANSHI(TEAM HEAD)** - [](https://github.com/panshilovesicecream)
+- **NISHTHA** - [](https://github.com/nishtha-22)
+- **ARIZA** - [](https://github.com/aziraxariza)
+- **PURVA** - [](https://github.com/Antarctica1234)
+- **AADHYA** - [](https://github.com/aadhyaavermaa)
+- **DIVYANSH** - [](https://github.com/Lordvaderani)
+- **ANUSHKA** - [](https://github.com/anushkayadav0901)
+- **ADITYA** - [](https://github.com/estrizal)
+- **RAKSHITA** -[](https://github.com/rakshitatagra)
+
+---
+
+### Team Pictures and Animation
+The Pictures and Animation team enhanced the visual appeal of the project through stunning images and smooth animations.
+
+- **CHHAVI(TEAM HEAD)** - [](https://github.com/chhavibhalla)
+- **SUNANDITHA** - [](https://github.com/4563kr)
+- **PURVA** - [](https://github.com/Antarctica1234)
+
+
+---
+
+And a huge shoutout to the open-source community for their support and tools like **Three.js**, **GSAP**, and **Blender**, which made this project possible! 🎉
+
+---
+
+### Want to See Your Name Here?
+Contribute to the project and be part of the acknowledgment section! 🌟
 
 ## 📂 Project Structure
 
