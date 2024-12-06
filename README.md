@@ -102,12 +102,19 @@ Contribute to the project and be part of the acknowledgment section! 🌟
 
 IGDTUW-3D-Map/
 ├── models/             # 3D models in .glb format
+
 ├── assets/             # Images, icons, and static assets
+
 ├── css/                # Styling files
+
 ├── js/                 # JavaScript for interactivity
+
 ├── index.html          # Main HTML file
+
 ├── README.md           # Project documentation
+
 ├── .gitignore          # Git ignored files
+
 └── package.json        # npm configuration
 
 📄 License
