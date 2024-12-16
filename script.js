@@ -37,7 +37,101 @@ scene.add(ground);
 const gltfLoader = new GLTFLoader();
 console.log('Current working directory:', window.location.href);
 
-let model; // Declare model variable at a higher scope
+// Keep track of our models and loading state
+let audiModel, ig2Model;
+let allModelsLoaded = false;
+
+// Setup a better way to load models - using Promises so we can wait for everything
+function loadModels() {
+    return new Promise((resolve, reject) => {
+        let loadedCount = 0;
+        const totalModels = 2;
+
+        // Helper function to check if we're done loading
+        function checkAllLoaded() {
+            loadedCount++;
+            if (loadedCount === totalModels) {
+                allModelsLoaded = true;
+                document.getElementById('loading-screen').style.display = 'none';
+                resolve();
+            }
+        }
+
+        // First up - load the Audi model
+        gltfLoader.load(
+            '/models/audi1.glb',
+            (gltf) => {
+                audiModel = gltf.scene;
+                audiModel.scale.set(3, 3, 3);
+                audiModel.position.set(0, 3.8, -12);
+                audiModel.rotation.y = Math.PI;
+                
+                // Make sure the model casts shadows and looks shiny
+                audiModel.traverse((node) => {
+                    if (node.isMesh) {
+                        node.castShadow = true;
+                        node.receiveShadow = true;
+                        if (node.material) {
+                            node.material.metalness = 0.9;
+                            node.material.roughness = 0.2;
+                        }
+                    }
+                });
+                
+                scene.add(audiModel);
+                checkAllLoaded();
+            },
+            (progress) => {
+                // Keep track of loading progress in console
+                console.log('Audi loading progress:', (progress.loaded / progress.total) * 100 + '%');
+            },
+            reject
+        );
+
+        // Now load the IG2 model
+        gltfLoader.load(
+            '/models/ig2.glb',
+            (gltf) => {
+                ig2Model = gltf.scene;
+                ig2Model.scale.set(2, 2, 2);
+                ig2Model.position.set(30, 0.2, -35);
+                ig2Model.rotation.y = Math.PI/2;
+                
+                // Same shadow and material setup as the Audi
+                ig2Model.traverse((node) => {
+                    if (node.isMesh) {
+                        node.castShadow = true;
+                        node.receiveShadow = true;
+                        if (node.material) {
+                            node.material.metalness = 0.9;
+                            node.material.roughness = 0.2;
+                        }
+                    }
+                });
+                
+                scene.add(ig2Model);
+                checkAllLoaded();
+            },
+            (progress) => {
+                console.log('IG2 loading progress:', (progress.loaded / progress.total) * 100 + '%');
+            },
+            reject
+        );
+    });
+}
+
+// This kicks everything off - loads models first, then starts the cool camera animation
+async function initScene() {
+    try {
+        await loadModels();
+        startupAnimation();
+    } catch (error) {
+        console.error('Error loading models:', error);
+        document.getElementById('loading-screen').innerHTML = 'Oops! Something went wrong. Try refreshing the page.';
+    }
+}
+
+initScene();
 
 // Create a startup animation sequence
 function startupAnimation() {
@@ -95,78 +189,6 @@ function startupAnimation() {
         onUpdate: () => camera.lookAt(0, 0, 50)
     });
 }
-
-gltfLoader.load(
-    '/models/audi1.glb',
-    (gltf) => {
-        model = gltf.scene;
-        
-        // Scale if model is too big/small
-        model.scale.set(3, 3, 3);
-        
-        // Center the model
-        model.position.set(0, 3.8, -12);
-        
-        // Rotate to match Blender orientation
-        model.rotation.x = 0;
-        model.rotation.y = Math.PI; // 180 degrees to face front
-        model.rotation.z = 0;
-        
-        // Add shadow support
-        model.traverse((node) => {
-            if (node.isMesh) {
-                node.castShadow = true;
-                node.receiveShadow = true;
-                // Optional: Improve material rendering
-                if (node.material) {
-                    node.material.metalness = 0.9;
-                    node.material.roughness = 0.2;
-                }
-            }
-        });
-        
-        scene.add(model);
-        document.getElementById('loading-screen').style.display = 'none';
-        
-        // Start the animation after model is loaded
-        startupAnimation();
-        
-        // Log success
-        console.log('Audi model added to scene');
-        
-        // Log model position and scale for debugging
-        console.log('Model position:', model.position);
-        console.log('Model scale:', model.scale);
-        
-        // After loading the model
-        console.log('Scene contents:', scene.children);
-    },
-    // Progress callback
-    (progress) => {
-        const percentComplete = (progress.loaded / progress.total) * 100;
-        console.log('Loading progress:', percentComplete + '%');
-    },
-    // Error callback
-    (error) => {
-        console.error('Failed to load model:', {
-            modelPath: '/models/audi1.glb',
-            error: error,
-            workingDirectory: window.location.href
-        });
-        const errorDiv = document.createElement('div');
-        errorDiv.style.position = 'fixed';
-        errorDiv.style.top = '50%';
-        errorDiv.style.left = '50%';
-        errorDiv.style.transform = 'translate(-50%, -50%)';
-        errorDiv.style.color = 'red';
-        errorDiv.style.background = 'white';
-        errorDiv.style.padding = '20px';
-        errorDiv.innerHTML = `Failed to load model: ${error.message}`;
-        document.body.appendChild(errorDiv);
-        
-        document.getElementById('loading-screen').style.display = 'none';
-    }
-);
 
 // Lights
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
